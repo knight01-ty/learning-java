@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // sum of two
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(a + b);
+
+        // swap of two
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+
+        int temp = x;
+        x = y;
+        y = temp;
+
+        System.out.println(x + " " + y);
+
+        // arithmetic
+        int p = sc.nextInt();
+        int q = sc.nextInt();
+
+        System.out.println(p + q);
+        System.out.println(p - q);
+        System.out.println(p * q);
+        System.out.println(p / q);
+
+        // largest of three
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
+
+        int max = n1;
+
+        if (n2 > max) {
+            max = n2;
+        }
+
+        if (n3 > max) {
+            max = n3;
+        }
+
+        System.out.println(max);
+
+        // even odd
+        int num = sc.nextInt();
+
+        if (num % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+
+        // leap year
+        int year = sc.nextInt();
+
+        if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+            System.out.println(year + " is a leap year");
+        } else {
+            System.out.println("not a leap year");
+        }
+    }
+}
